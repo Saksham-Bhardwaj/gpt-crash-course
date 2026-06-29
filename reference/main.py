@@ -198,7 +198,12 @@ class GPT(nn.Module):
             if input_ids.shape[1] > self.config.max_seq_len:
                 input_ids = input_ids[:, -self.config.max_seq_len:]
             logits, _ = self.forward(input_ids)
-            logits = logits[:, -1, :] / temperature
+            logits = logits[:, -1, :]
+            if temperature < 1e-7:
+                next_token = torch.argmax(logits, dim=-1, keepdim=True)
+                input_ids = torch.cat([input_ids, next_token], dim=1)
+                continue
+            logits = logits / temperature
             if top_k is not None:
                 v, _ = torch.topk(logits, min(top_k, logits.size(-1)))
                 logits[logits < v[:, -1:]] = float('-inf')

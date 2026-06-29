@@ -13,7 +13,7 @@ Train a small GPT model on your own text, save a checkpoint, plot loss, and gene
 ## Requirements
 
 - Accept `--data`, `--steps`, and `--out`.
-- Load text from `data/my_text.txt` or a user-specified file.
+- Load text from `data/sample.txt` or a user-specified file.
 - Tokenize with GPT-2 `tiktoken`.
 - Create input-target windows.
 - Train a tiny GPT for a small number of steps.
@@ -29,12 +29,12 @@ Train a small GPT model on your own text, save a checkpoint, plot loss, and gene
 ## Suggested CLI
 
 ```bash
-python projects/train_custom_tiny_gpt.py --data data/my_text.txt --steps 100 --out checkpoints/tiny_custom_gpt.pt
+python projects/train_custom_tiny_gpt.py --data data/sample.txt --steps 100 --out checkpoints/tiny_custom_gpt.pt
 ```
 
 ## Implementation Plan
 
-1. Create or copy a small plain-text dataset into `data/my_text.txt`.
+1. Create or copy a small plain-text dataset into `data/sample.txt`.
 2. Load the text and repeat it if it is too short for several batches.
 3. Tokenize all text once.
 4. Build a dataset of fixed-length windows:

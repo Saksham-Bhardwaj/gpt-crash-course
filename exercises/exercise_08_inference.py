@@ -25,9 +25,10 @@ GPTConfig = source.GPTConfig
 
 def apply_temperature(logits: torch.Tensor, temperature: float) -> torch.Tensor:
     """Scale logits by temperature."""
-    # TODO: handle temperature <= 0 as greedy-compatible or raise a clear error.
-    # TODO: divide logits by temperature.
-    raise NotImplementedError("TODO: implement apply_temperature")
+    if temperature < 1e-7:
+        greedy_logits = torch.full_like(logits, float("-inf"))
+        return greedy_logits.scatter(1, logits.argmax(dim=-1, keepdim=True), 0.0)
+    return logits / temperature
 
 
 def apply_top_k(logits: torch.Tensor, top_k: int | None) -> torch.Tensor:

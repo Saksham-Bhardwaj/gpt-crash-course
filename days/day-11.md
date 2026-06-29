@@ -23,7 +23,7 @@ Finish Project 3 using `projects/project_3_custom_training.md`.
 
 Create `projects/train_custom_tiny_gpt.py` that:
 
-- Loads `data/my_text.txt`.
+- Loads `data/sample.txt`.
 - Repeats or chunks text if needed.
 - Trains a tiny GPT for a small number of steps.
 - Logs loss every few steps.
@@ -34,7 +34,7 @@ Create `projects/train_custom_tiny_gpt.py` that:
 ## Run
 
 ```bash
-python projects/train_custom_tiny_gpt.py --data data/my_text.txt --steps 100 --out checkpoints/tiny_custom_gpt.pt
+python projects/train_custom_tiny_gpt.py --data data/sample.txt --steps 100 --out checkpoints/tiny_custom_gpt.pt
 ```
 
 Expected output:

@@ -33,7 +33,7 @@ pip install -r requirements.lock.txt
 The course already includes the reference repo under `reference/`. If you are rebuilding or refreshing that bundled reference from upstream, use:
 
 ```bash
-git clone <how-to-train-your-gpt-repo-url> reference
+git clone <reference-repo-url> reference
 rm -rf reference/.git reference/__pycache__
 ```
 
@@ -56,6 +56,8 @@ make clean
 ```
 
 `make test` verifies repository imports and starter structure. `make check` runs every exercise script and is expected to pass after the learner completes the exercise TODOs.
+
+Inference note: `temperature=0` is treated as greedy decoding, so generation picks the highest-logit token with `argmax` instead of sampling.
 
 ## 14-Day Schedule
 
