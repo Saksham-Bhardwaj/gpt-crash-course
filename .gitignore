@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+checkpoints/*.pt
+outputs/*.png
+outputs/*.txt
+data/*.txt
+!data/.gitkeep
+!checkpoints/.gitkeep
+!outputs/.gitkeep
