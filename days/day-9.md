@@ -4,14 +4,18 @@
 
 Stack transformer blocks into a complete GPT-style next-token model.
 
+## Concept summary
+
+A tiny GPT combines token embeddings, repeated transformer blocks, a final normalization layer, and a language-model head. The model outputs one logits vector per input position. During training, targets are the same token stream shifted left by one position, so every position learns to predict what comes next.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/07_gpt_model.md:1` - Complete GPT chapter.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/07_gpt_model.md:21` - Config.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/07_gpt_model.md:64` - Full model.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/07_gpt_model.md:284` - Parameters and buffers.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/07_gpt_model.md:299` - Logits.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/weight_tying.md:100` - Weight tying.
+- `reference/chapters/07_gpt_model.md:1` - Complete GPT chapter.
+- `reference/chapters/07_gpt_model.md:21` - Config.
+- `reference/chapters/07_gpt_model.md:64` - Full model.
+- `reference/chapters/07_gpt_model.md:284` - Parameters and buffers.
+- `reference/chapters/07_gpt_model.md:299` - Logits.
+- `reference/explanations and examples WIP/weight_tying.md:100` - Weight tying.
 
 ## Implement
 

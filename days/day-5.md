@@ -4,15 +4,19 @@
 
 Map token IDs to vectors and apply rotary position embeddings to query/key vectors.
 
+## Concept summary
+
+Embeddings turn discrete token IDs into continuous vectors that can be optimized by gradient descent. Position information is separate from token identity; RoPE injects position by rotating query and key vectors so attention scores depend on where tokens appear, while preserving the original tensor shape.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/03_embeddings.md:1` - Embedding chapter intro.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/03_embeddings.md:43` - How embeddings are learned.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/03_embeddings.md:124` - Embedding code.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/04_positional_encoding.md:22` - RoPE overview.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/04_positional_encoding.md:42` - Numerical example.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/04_positional_encoding.md:126` - RoPE code.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/rope.md:47` - Simple RoPE explanation.
+- `reference/chapters/03_embeddings.md:1` - Embedding chapter intro.
+- `reference/chapters/03_embeddings.md:43` - How embeddings are learned.
+- `reference/chapters/03_embeddings.md:124` - Embedding code.
+- `reference/chapters/04_positional_encoding.md:22` - RoPE overview.
+- `reference/chapters/04_positional_encoding.md:42` - Numerical example.
+- `reference/chapters/04_positional_encoding.md:126` - RoPE code.
+- `reference/explanations and examples WIP/rope.md:47` - Simple RoPE explanation.
 
 ## Implement
 

@@ -4,13 +4,17 @@
 
 Finish a tokenizer visualizer that shows multi-step BPE and compares against GPT-2 tokens.
 
+## Concept summary
+
+Multi-step BPE shows how early local merges compound into larger token pieces. Comparing toy BPE with GPT-2 tokenization highlights practical details such as whitespace-sensitive tokens, byte-level fallback behavior, and the difference between learning merges from a tiny demo corpus versus using a large pretrained tokenizer vocabulary.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:126` - Round 2.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:153` - Round 3.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:182` - Final result.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:202` - GPT-2 real text.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:237` - Space handling.
+- `reference/explanations and examples WIP/bpe_tokenization.md:126` - Round 2.
+- `reference/explanations and examples WIP/bpe_tokenization.md:153` - Round 3.
+- `reference/explanations and examples WIP/bpe_tokenization.md:182` - Final result.
+- `reference/explanations and examples WIP/bpe_tokenization.md:202` - GPT-2 real text.
+- `reference/explanations and examples WIP/bpe_tokenization.md:237` - Space handling.
 
 ## Implement
 

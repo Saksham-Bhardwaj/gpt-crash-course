@@ -4,15 +4,19 @@
 
 Build the training pieces and prove one optimization step updates the model.
 
+## Concept summary
+
+Language-model training creates fixed-length windows from token streams. Inputs contain tokens `i` through `i + block_size - 1`; targets contain the next tokens. Cross-entropy measures next-token prediction error, `backward()` computes gradients, and AdamW updates model parameters using those gradients.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:3` - What training is.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:15` - Training loop visual.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:29` - Cross-entropy.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:88` - Backpropagation.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:122` - AdamW.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:212` - Complete training code.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:332` - Optimizer.
+- `reference/chapters/08_training.md:3` - What training is.
+- `reference/chapters/08_training.md:15` - Training loop visual.
+- `reference/chapters/08_training.md:29` - Cross-entropy.
+- `reference/chapters/08_training.md:88` - Backpropagation.
+- `reference/chapters/08_training.md:122` - AdamW.
+- `reference/chapters/08_training.md:212` - Complete training code.
+- `reference/chapters/08_training.md:332` - Optimizer.
 
 ## Implement
 

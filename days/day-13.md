@@ -4,13 +4,17 @@
 
 Build a prompt-driven inference UI with decoding controls.
 
+## Concept summary
+
+An inference UI wraps generation in repeatable controls. The checkpoint defines model weights, the prompt defines initial context, and decoding settings define how deterministic or varied the continuation will be. Printing the settings with the output makes samples reproducible and easier to compare.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/09_inference.md:254` - Text generation wrapper.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/09_inference.md:296` - Interactive example.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/sampling.md:109` - Top-k.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/sampling.md:130` - Top-p.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/sampling.md:164` - Recommended combination.
+- `reference/chapters/09_inference.md:254` - Text generation wrapper.
+- `reference/chapters/09_inference.md:296` - Interactive example.
+- `reference/explanations and examples WIP/sampling.md:109` - Top-k.
+- `reference/explanations and examples WIP/sampling.md:130` - Top-p.
+- `reference/explanations and examples WIP/sampling.md:164` - Recommended combination.
 
 ## Implement
 

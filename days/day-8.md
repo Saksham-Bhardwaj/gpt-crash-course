@@ -4,16 +4,20 @@
 
 Combine attention, RMSNorm, residual connections, and SwiGLU into a transformer block.
 
+## Concept summary
+
+A transformer block alternates communication and computation. Attention moves information across sequence positions, while the feed-forward network transforms each position independently. RMSNorm stabilizes activations, and residual connections preserve an easy path for information and gradients through deep stacks.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/06_transformer_block.md:18` - Two sub-layers.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/06_transformer_block.md:54` - Residual connection.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/06_transformer_block.md:93` - Pre-norm vs post-norm.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/06_transformer_block.md:138` - RMSNorm code.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/06_transformer_block.md:174` - SwiGLU code.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/06_transformer_block.md:225` - Complete block.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/rmsnorm.md:74` - RMSNorm steps.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/swiglu.md:94` - SwiGLU steps.
+- `reference/chapters/06_transformer_block.md:18` - Two sub-layers.
+- `reference/chapters/06_transformer_block.md:54` - Residual connection.
+- `reference/chapters/06_transformer_block.md:93` - Pre-norm vs post-norm.
+- `reference/chapters/06_transformer_block.md:138` - RMSNorm code.
+- `reference/chapters/06_transformer_block.md:174` - SwiGLU code.
+- `reference/chapters/06_transformer_block.md:225` - Complete block.
+- `reference/explanations and examples WIP/rmsnorm.md:74` - RMSNorm steps.
+- `reference/explanations and examples WIP/swiglu.md:94` - SwiGLU steps.
 
 ## Implement
 

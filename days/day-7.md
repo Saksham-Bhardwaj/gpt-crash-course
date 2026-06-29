@@ -4,13 +4,17 @@
 
 Create heatmaps that show which previous tokens each token attends to.
 
+## Concept summary
+
+An attention heatmap is a matrix of probabilities. Each row is the token doing the reading, and each column is a token it may read from. For causal attention, the visible mass should be on or below the diagonal. Random untrained heads are useful for checking mechanics, not semantics.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:607` - What the model sees.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:609` - Attention heatmap.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/attention.md:235` - Full attention matrix.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/attention.md:251` - Multi-head attention.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/causal_masking.md:121` - Mask implementation.
+- `reference/chapters/05_attention.md:607` - What the model sees.
+- `reference/chapters/05_attention.md:609` - Attention heatmap.
+- `reference/explanations and examples WIP/attention.md:235` - Full attention matrix.
+- `reference/explanations and examples WIP/attention.md:251` - Multi-head attention.
+- `reference/explanations and examples WIP/causal_masking.md:121` - Mask implementation.
 
 ## Implement
 

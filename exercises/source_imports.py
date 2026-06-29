@@ -8,12 +8,13 @@ from pathlib import Path
 from types import ModuleType
 
 
-SOURCE_REPO = Path("/tmp/gpt-study/how-to-train-your-gpt")
+REPO_ROOT = Path(__file__).resolve().parents[1]
+SOURCE_REPO = REPO_ROOT / "reference"
 SOURCE_MAIN = SOURCE_REPO / "main.py"
 
 
 def load_source_main() -> ModuleType:
-    """Load `/tmp/gpt-study/how-to-train-your-gpt/main.py` as a module."""
+    """Load the bundled `reference/main.py` as a module."""
     if not SOURCE_MAIN.exists():
         raise FileNotFoundError(f"source repo main.py not found: {SOURCE_MAIN}")
 

@@ -4,14 +4,18 @@
 
 Train a tiny GPT on your own text, save a checkpoint, and plot loss.
 
+## Concept summary
+
+Custom training connects the full loop: data loading, tokenization, batching, optimization, checkpointing, and sampling. Tiny models on tiny datasets often memorize patterns quickly, so falling loss mainly proves the pipeline is learning the dataset, not that the model has broad language ability.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:175` - Gradient accumulation.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:197` - Overfitting.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:285` - LR scheduler.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md:366` - Training loop.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/perplexity.md:40` - Loss and perplexity.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/perplexity.md:204` - Perplexity during training.
+- `reference/chapters/08_training.md:175` - Gradient accumulation.
+- `reference/chapters/08_training.md:197` - Overfitting.
+- `reference/chapters/08_training.md:285` - LR scheduler.
+- `reference/chapters/08_training.md:366` - Training loop.
+- `reference/explanations and examples WIP/perplexity.md:40` - Loss and perplexity.
+- `reference/explanations and examples WIP/perplexity.md:204` - Perplexity during training.
 
 ## Implement
 

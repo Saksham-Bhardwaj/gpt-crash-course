@@ -5,8 +5,8 @@ Concept:
     a language-model head trained with next-token cross-entropy.
 
 Source reference:
-    /tmp/gpt-study/how-to-train-your-gpt/chapters/07_gpt_model.md
-    /tmp/gpt-study/how-to-train-your-gpt/main.py
+    reference/chapters/07_gpt_model.md
+    reference/main.py
 """
 
 from __future__ import annotations

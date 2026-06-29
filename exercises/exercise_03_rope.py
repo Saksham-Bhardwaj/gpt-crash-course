@@ -5,8 +5,8 @@ Concept:
     tensor shape while making dot products position-aware.
 
 Source reference:
-    /tmp/gpt-study/how-to-train-your-gpt/chapters/04_positional_encoding.md
-    /tmp/gpt-study/how-to-train-your-gpt/main.py
+    reference/chapters/04_positional_encoding.md
+    reference/main.py
 """
 
 from __future__ import annotations

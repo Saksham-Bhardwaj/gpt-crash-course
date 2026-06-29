@@ -5,8 +5,8 @@ Concept:
     masking prevents a position from reading future tokens during training.
 
 Source reference:
-    /tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md
-    /tmp/gpt-study/how-to-train-your-gpt/main.py
+    reference/chapters/05_attention.md
+    reference/main.py
 """
 
 from __future__ import annotations

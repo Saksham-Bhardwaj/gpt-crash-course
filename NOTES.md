@@ -5,7 +5,7 @@ Use one fresh Codex session per day. This keeps context small and avoids relying
 Example for Day 7:
 
 ```bash
-codex exec --dangerously-bypass-approvals-and-sandbox -C /tmp/gpt-crash-course "Load day 7 plan from days/day-7.md. Read the relevant chapter from /tmp/gpt-study/how-to-train-your-gpt. Help me implement the exercise and verify it works."
+codex exec --dangerously-bypass-approvals-and-sandbox -C . "Load day 7 plan from days/day-7.md. Read the relevant chapter from reference. Help me implement the exercise and verify it works."
 ```
 
 Why this works:
@@ -18,7 +18,7 @@ Why this works:
 Recommended daily pattern:
 
 ```bash
-codex exec --dangerously-bypass-approvals-and-sandbox -C /tmp/gpt-crash-course "Load day N plan from days/day-N.md. Read the relevant source sections from /tmp/gpt-study/how-to-train-your-gpt. Help me implement the task, run the checks, and prepare the commit."
+codex exec --dangerously-bypass-approvals-and-sandbox -C . "Load day N plan from days/day-N.md. Read the relevant source sections from reference. Help me implement the task, run the checks, and prepare the commit."
 ```
 
 Good prompts are specific:

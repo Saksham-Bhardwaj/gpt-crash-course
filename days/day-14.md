@@ -4,12 +4,16 @@
 
 Polish the repo and demonstrate the full GPT path end to end.
 
+## Concept summary
+
+The final review ties the system together from raw text to generated text. The tokenizer maps text to IDs, embeddings map IDs to vectors, transformer blocks update vectors with causal context, the LM head maps vectors to logits, and sampling turns logits back into new token IDs. A polished demo proves each handoff works.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/10_full_script.md:1` - Full script.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/11_glossary.md:1` - Glossary.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/kv_cache.md:39` - Why KV cache matters.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/kv_cache.md:203` - KV cache tradeoff.
+- `reference/chapters/10_full_script.md:1` - Full script.
+- `reference/chapters/11_glossary.md:1` - Glossary.
+- `reference/explanations and examples WIP/kv_cache.md:39` - Why KV cache matters.
+- `reference/explanations and examples WIP/kv_cache.md:203` - KV cache tradeoff.
 
 ## Implement
 

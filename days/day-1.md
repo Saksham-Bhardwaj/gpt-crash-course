@@ -4,14 +4,18 @@
 
 Understand the full GPT pipeline and verify your local Python environment.
 
+## Concept summary
+
+A GPT is a next-token prediction system. Raw text becomes token IDs, token IDs become vectors, transformer blocks mix information from earlier positions, and a final linear head produces logits for the next token. Training compares those logits with the actual next token; inference samples from the logits repeatedly to extend a prompt.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/00_overview.md:1` - What a GPT is.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/00_overview.md:38` - Pipeline overview.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/00_overview.md:55` - What you will build.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/01_setup.md:61` - Installation.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/01_setup.md:104` - Complete import block.
-- `/tmp/gpt-study/how-to-train-your-gpt/main.py:1` - Skim the full implementation.
+- `reference/chapters/00_overview.md:1` - What a GPT is.
+- `reference/chapters/00_overview.md:38` - Pipeline overview.
+- `reference/chapters/00_overview.md:55` - What you will build.
+- `reference/chapters/01_setup.md:61` - Installation.
+- `reference/chapters/01_setup.md:104` - Complete import block.
+- `reference/main.py:1` - Skim the full implementation.
 
 ## Implement
 
@@ -19,7 +23,7 @@ Understand the full GPT pipeline and verify your local Python environment.
 2. Install `requirements.txt`.
 3. Create a short scratch script or one-liner that imports `torch`, `tiktoken`, `datasets`, `numpy`, and `matplotlib`.
 4. Print the selected PyTorch device.
-5. Read the class and function names in `/tmp/gpt-study/how-to-train-your-gpt/main.py` and write a 5-8 line summary in your own notes or commit message.
+5. Read the class and function names in `reference/main.py` and write a 5-8 line summary in your own notes or commit message.
 
 ## Run
 

@@ -5,8 +5,8 @@ Concept:
     [batch, seq], it returns vectors shaped [batch, seq, d_model].
 
 Source reference:
-    /tmp/gpt-study/how-to-train-your-gpt/chapters/03_embeddings.md
-    /tmp/gpt-study/how-to-train-your-gpt/main.py
+    reference/chapters/03_embeddings.md
+    reference/main.py
 """
 
 from __future__ import annotations

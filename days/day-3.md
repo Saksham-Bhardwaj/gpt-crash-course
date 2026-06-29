@@ -4,12 +4,16 @@
 
 Build the core BPE merge algorithm on a toy corpus.
 
+## Concept summary
+
+Byte pair encoding starts with small symbols and repeatedly merges frequent adjacent pairs. A toy implementation makes the compression logic visible: every merge replaces a common two-symbol pattern with one larger symbol. This is not the full production GPT tokenizer, but it explains why frequent chunks become single tokens over time.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:74` - Build a vocabulary from scratch.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:80` - Starting point.
-- `/tmp/gpt-study/how-to-train-your-gpt/explanations and examples WIP/bpe_tokenization.md:97` - Round 1 merge.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md:32` - BPE step-by-step.
+- `reference/explanations and examples WIP/bpe_tokenization.md:74` - Build a vocabulary from scratch.
+- `reference/explanations and examples WIP/bpe_tokenization.md:80` - Starting point.
+- `reference/explanations and examples WIP/bpe_tokenization.md:97` - Round 1 merge.
+- `reference/chapters/02_tokenization.md:32` - BPE step-by-step.
 
 ## Implement
 

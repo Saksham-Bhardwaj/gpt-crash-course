@@ -4,14 +4,18 @@
 
 Convert text to token IDs and back while understanding why GPT uses subword tokens.
 
+## Concept summary
+
+Tokenization is the bridge between human text and model tensors. GPT-style tokenizers usually use subword pieces, so common text chunks can be represented compactly while rare or new words can still be decomposed into smaller known pieces. Encoding must be reversible enough that decoding token IDs recreates the original text.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md:1` - Chapter intro.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md:18` - Subword tokenization.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md:32` - How BPE works.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md:86` - GPT tokenizer conventions.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md:95` - EOS token.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md:112` - Tokenizer code.
+- `reference/chapters/02_tokenization.md:1` - Chapter intro.
+- `reference/chapters/02_tokenization.md:18` - Subword tokenization.
+- `reference/chapters/02_tokenization.md:32` - How BPE works.
+- `reference/chapters/02_tokenization.md:86` - GPT tokenizer conventions.
+- `reference/chapters/02_tokenization.md:95` - EOS token.
+- `reference/chapters/02_tokenization.md:112` - Tokenizer code.
 
 ## Implement
 

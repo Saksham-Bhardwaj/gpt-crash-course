@@ -5,8 +5,8 @@ Concept:
     model parameters with an optimizer.
 
 Source reference:
-    /tmp/gpt-study/how-to-train-your-gpt/chapters/08_training.md
-    /tmp/gpt-study/how-to-train-your-gpt/main.py
+    reference/chapters/08_training.md
+    reference/main.py
 """
 
 from __future__ import annotations

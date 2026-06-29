@@ -6,8 +6,8 @@ Concept:
     connections.
 
 Source reference:
-    /tmp/gpt-study/how-to-train-your-gpt/chapters/06_transformer_block.md
-    /tmp/gpt-study/how-to-train-your-gpt/main.py
+    reference/chapters/06_transformer_block.md
+    reference/main.py
 """
 
 from __future__ import annotations

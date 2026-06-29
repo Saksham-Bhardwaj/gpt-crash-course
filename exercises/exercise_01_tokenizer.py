@@ -6,8 +6,8 @@ Concept:
     encoding, decoding, token-piece inspection, and EOS-separated documents.
 
 Source reference:
-    /tmp/gpt-study/how-to-train-your-gpt/chapters/02_tokenization.md
-    /tmp/gpt-study/how-to-train-your-gpt/main.py
+    reference/chapters/02_tokenization.md
+    reference/main.py
 """
 
 from __future__ import annotations

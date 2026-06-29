@@ -4,16 +4,20 @@
 
 Implement scaled causal self-attention and prove tokens cannot attend to the future.
 
+## Concept summary
+
+Self-attention lets each token build a weighted mixture of other token representations. In a GPT, the causal mask blocks future positions so training matches generation: token `t` can only use tokens up to `t`. Scaling by `sqrt(head_dim)` keeps score magnitudes stable before softmax.
+
 ## Read
 
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:31` - Self-attention core idea.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:55` - Math from words to scores.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:90` - Attention scores.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:108` - Scaling.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:124` - Causal mask.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:136` - Softmax weights.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:149` - Weighted values.
-- `/tmp/gpt-study/how-to-train-your-gpt/chapters/05_attention.md:360` - Full multi-head attention code.
+- `reference/chapters/05_attention.md:31` - Self-attention core idea.
+- `reference/chapters/05_attention.md:55` - Math from words to scores.
+- `reference/chapters/05_attention.md:90` - Attention scores.
+- `reference/chapters/05_attention.md:108` - Scaling.
+- `reference/chapters/05_attention.md:124` - Causal mask.
+- `reference/chapters/05_attention.md:136` - Softmax weights.
+- `reference/chapters/05_attention.md:149` - Weighted values.
+- `reference/chapters/05_attention.md:360` - Full multi-head attention code.
 
 ## Implement
 
